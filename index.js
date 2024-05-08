@@ -6,11 +6,6 @@ const menu = {
       'pancakes': {
         price: 7,
         comment: "Our fluffy pancakes are a customer favorite!",
-        type: {
-          'with chocolate topping': 2,
-          'with honey': 3,
-          'with jam': 3,
-        }
       },
       'omelette': {
         price: 10,
@@ -19,73 +14,28 @@ const menu = {
       'waffles': {
         price: 8,
         comment: "Indulge in our delicious waffles with syrup and fresh fruit.",
-        type: {
-          'with fresh fruit and chocolate': 4,
-          'with nuts and honey': 4,
-          'with jam': 3,
-        }
       },
       'french toast': {
         price: 9,
         comment: "Enjoy our golden brown French toast with a sprinkle of powdered sugar."
       },
-      'breakfast burrito': {
-        price: 11,
-        comment: "Start your day off right with our hearty breakfast burrito."
-      },
       'avocado toast': {
         price: 12,
         comment: "Try our trendy avocado toast topped with cherry tomatoes and feta cheese."
-      },
-      'eggs benedict': {
-        price: 13,
-        comment: "Treat yourself to eggs Benedict with a silky smooth hollandaise sauce."
-      },
-      'fruit parfait': {
-        price: 6,
-        comment: "For a lighter option, enjoy our refreshing fruit parfait with yogurt and granola.",
-        type: {
-          'extra mango': 6,
-          'extra pineapple': 5,
-          'double yogurt': 4,
-        }
       }
     },
     lunch: {
       'steak': {
         price: 20,
         comment: "Treat yourself to our perfectly cooked steak dinner.",
-        type: {
-          'rare': 1,
-          'medium rare': 1,
-          'medium': 2,
-          'medium well': 2,
-          'well done': 3,
-        }
       },
       'pasta': {
         price: 15,
         comment: "Our homemade pasta will delight your taste buds.",
-        type: {
-          'with double cheese': 4,
-          'with marinara souce': 2,
-          'with alfredo souce': 2,
-          'with pesto souce': 2,
-        }
       },
       'salmon': {
         price: 17,
         comment: "Enjoy our deliciously seasoned salmon with a side of roasted vegetables.",
-        type: {
-          'grilled': 2,
-          'blackened': 3,
-          'poached': 2,
-          'backed': 4,
-        }
-      },
-      'chicken marsala': {
-        price: 16,
-        comment: "Indulge in our flavorful chicken Marsala served with creamy mashed potatoes."
       },
       'risotto': {
         price: 18,
@@ -94,62 +44,20 @@ const menu = {
       'pizza': {
         price: 11,
         comment: "Indulge in a slice of our cheesy pizza with your favorite toppings.",
-        type: {
-          'four cheese': 0,
-          'margherita': 2,
-          'hawaiian': 3,
-          'pepperoni': 3,
-          'veggie': 2,
-        }
-      },
-      'beef stroganoff': {
-        price: 18,
-        comment: "Warm up with our rich and hearty beef stroganoff served over egg noodles."
-      },
-      'roasted chicken': {
-        price: 16,
-        comment: "Enjoy a comforting meal with our herb-roasted chicken served with mashed potatoes."
-      },
-      'vegetarian lasagna': {
-        price: 14,
-        comment: "Indulge in our cheesy and flavorful vegetarian lasagna, made with layers of fresh veggies."
       }
     },
     dinner: {
       'steak': {
         price: 22,
         comment: "Treat yourself to our perfectly cooked steak dinner.",
-        type: {
-          'rare': 1,
-          'medium rare': 1,
-          'medium': 2,
-          'medium well': 2,
-          'well done': 3,
-        }
       },
       'pasta': {
         price: 17,
         comment: "Our homemade pasta will delight your taste buds.",
-        type: {
-          'with double cheese': 4,
-          'with marinara souce': 2,
-          'with alfredo souce': 2,
-          'with pesto souce': 2,
-        }
       },
       'salmon': {
         price: 19,
         comment: "Enjoy our deliciously seasoned salmon with a side of roasted vegetables.",
-        type: {
-          'grilled': 2,
-          'blackened': 3,
-          'poached': 2,
-          'backed': 4,
-        }
-      },
-      'chicken marsala': {
-        price: 18,
-        comment: "Indulge in our flavorful chicken Marsala served with creamy mashed potatoes."
       },
       'risotto': {
         price: 20,
@@ -158,64 +66,75 @@ const menu = {
       'pizza': {
         price: 13,
         comment: "Indulge in a slice of our cheesy pizza with your favorite toppings.",
-        type: {
-          'four cheese': 0,
-          'margherita': 2,
-          'hawaiian': 3,
-          'pepperoni': 3,
-          'veggie': 2,
-        }
-      },
-      'beef stroganoff': {
-        price: 20,
-        comment: "Warm up with our rich and hearty beef stroganoff served over egg noodles."
-      },
-      'roasted chicken': {
-        price: 18,
-        comment: "Enjoy a comforting meal with our herb-roasted chicken served with mashed potatoes."
-      },
-      'vegetarian lasagna': {
-        price: 16,
-        comment: "Indulge in our cheesy and flavorful vegetarian lasagna, made with layers of fresh veggies."
       }
     }
   },
   sidesMenu: {
-    'fries': {
-      price: 3,
-      comment: "Our crispy fries are the perfect side dish."
+    firstSideDish: {
+      'fries': {
+        price: 3,
+        comment: "Our crispy fries are the perfect side dish."
+      },
+      'side salad': {
+        price: 5,
+        comment: "Add a fresh side salad with your meal, topped with your choice of dressing."
+      },
+      'coleslaw': {
+        price: 2,
+        comment: "Refresh your palate with our tangy and crunchy coleslaw."
+      },
+      'mashed potatoes': {
+        price: 4,
+        comment: "Indulge in our creamy and rich mashed potatoes, a classic favorite."
+      },
+      'grilled vegetables': {
+        price: 6,
+        comment: "Get your daily dose of veggies with our deliciously grilled vegetable medley."
+      }
     },
-    'soup': {
-      price: 4,
-      comment: "Warm up with a bowl of our homemade soup."
-    },
-    'coleslaw': {
-      price: 2,
-      comment: "Refresh your palate with our tangy and crunchy coleslaw."
-    },
-    'garlic bread': {
-      price: 3,
-      comment: "Savor the flavor of our garlicky and buttery garlic bread."
-    },
-    'mashed potatoes': {
-      price: 4,
-      comment: "Indulge in our creamy and rich mashed potatoes, a classic favorite."
-    },
-    'side salad': {
-      price: 5,
-      comment: "Add a fresh side salad with your meal, topped with your choice of dressing."
-    },
-    'onion rings': {
-      price: 5,
-      comment: "Enjoy our crispy and golden onion rings, a satisfying side dish."
-    },
-    'grilled vegetables': {
+    secondSideDish: {
+      'coke': {
+        price: 2.5,
+        comment: "Delicious and refreshing Coca-Cola for any time of the day."
+      },
+      'juice': {
+        price: 4,
+        comment: "Our fresh squeezed juices are packed with vitamins and flavor."
+      },
+      'lemonade': {
+        price: 3.5,
+        comment: "Cool off with our tangy and sweet lemonade."
+      },
+      'coffee': {
+        price: 2.5,
+        comment: "Start your day right with a cup of our rich and smooth coffee."
+      },
+      'tea': {
+        price: 3,
+        comment: "Relax with a warm cup of our soothing and aromatic teas."
+      }
+    }
+  },
+  dessertMenu: {
+    'cake': {
       price: 6,
-      comment: "Get your daily dose of veggies with our deliciously grilled vegetable medley."
+      comment: "Indulge in our decadent chocolate cake."
     },
-    'sweet potato fries': {
-      price: 4,
-      comment: "Satisfy your sweet tooth with our crispy and seasoned sweet potato fries."
+    'ice cream': {
+      price: 5,
+      comment: "Cool down with our creamy ice cream."
+    },
+    'cookies': {
+      price: 3,
+      comment: "Our freshly baked cookies are a sweet treat."
+    },
+    'cheesecake': {
+      price: 6,
+      comment: "Try our creamy cheesecake for a delightful dessert."
+    },
+    'brownies': {
+      price: 6,
+      comment: "Satisfy your chocolate craving with our fudgy brownies."
     }
   }
 };
@@ -233,7 +152,6 @@ const nonPersonalizedComments = [
   "Cheers to good food and good company!"
 ];
 
-
 let previousComment = '';
 
 const getRandomComment = () => {
@@ -248,9 +166,6 @@ const getRandomComment = () => {
   return randomComment;
 }
 
-let total = 0;
-let chosenType;
-
 const getMealTime = () => {
   const currentTime = moment().format('HH:mm');
 
@@ -263,68 +178,117 @@ const getMealTime = () => {
   }
 }
 
-const userInput = prompt(`Welcome to our menu! Please choose a category:\n${Object.keys(menu.mainMenu).map(key => `• ${key}`).join('\n')}`, `${getMealTime()}`);
+let total = 0;
+let validInput = false;
 
-if (userInput.toLowerCase() && menu.mainMenu[userInput.toLowerCase()]) {
-  const subMenu = menu.mainMenu[userInput.toLowerCase()];
+while (!validInput) {
+  const userInput = prompt(`Welcome to our menu! Please choose a category:\n${Object.keys(menu.mainMenu).map(key => `• ${key}`).join('\n')}`, `${getMealTime()}`);
 
-  const entree = prompt(`This is our ${userInput.toLowerCase()} menu.\nEntrees:\n${Object.keys(subMenu).map(key => `• ${key} - $${subMenu[key].price}`).join('\n')}\nSide dishes:\n${Object.keys(menu.sidesMenu).map(key => `• ${key} - $${menu.sidesMenu[key].price}`).join('\n')}\n\nTo start your order, please choose an entree for your ${userInput}.`);
+  if (userInput.toLowerCase() && menu.mainMenu[userInput.toLowerCase()]) {
+    const subMenu = menu.mainMenu[userInput.toLowerCase()];
 
-  if (entree.toLowerCase() && subMenu[entree.toLowerCase()]) {
-    const selectedEntree = subMenu[entree.toLowerCase()];
+    validInput = true;
 
-    if (selectedEntree) {
-      if (selectedEntree.type) {
-        const type = selectedEntree.type;
-        chosenType = prompt(`Please choose a type of your ${entree.toLowerCase()}:\n${Object.keys(type).map(key => `• ${key} - added cost: $${type[key]}`).join('\n')}\nIf you do not want to add any type - skip this step`);
-        
-        if (chosenType.toLowerCase() && !type[chosenType.toLowerCase()]) {
-          alert("The type you specified is not recognized. Make sure you enter the type without spelling mistakes.\nSkipping type selection.");
-          chosenType = '';
-        } else if (chosenType.toLowerCase()) {
-          const priceOfType = type[chosenType.toLowerCase()];
-          alert(`You have selected ${entree} with a price of: $${selectedEntree.price} and the type chosen is: ${chosenType.toLowerCase()} with an added cost of: $${priceOfType}\n${selectedEntree.comment}\n${getRandomComment()}`);
-          total += selectedEntree.price + priceOfType;
-        } else {
-          alert(`You have selected ${entree} with price: $${selectedEntree.price}\n${selectedEntree.comment}\n${getRandomComment()}`);
+    let validEntreeInput = false;
 
-          total += selectedEntree.price;
-        }
-      } else {
+    while (!validEntreeInput) {
+      const entree = prompt(`This is our ${userInput.toLowerCase()} menu.\nEntrees:\n${Object.keys(subMenu).map(key => `• ${key} - $${subMenu[key].price}`).join('\n')}\n\nTo start your order, please choose an entree for your ${userInput}.`);
+
+      if (entree.toLowerCase() && subMenu[entree.toLowerCase()]) {
+        const selectedEntree = subMenu[entree.toLowerCase()];
+
         alert(`You have selected ${entree} with price: $${selectedEntree.price}\n${selectedEntree.comment}\n${getRandomComment()}`);
-        chosenType = '';
 
         total += selectedEntree.price;
-      }
-    } 
-    
-    const firstSide = prompt(`Please choose a First side dish:\n${Object.keys(menu.sidesMenu).map(key => `• ${key} - $${menu.sidesMenu[key].price}`).join('\n')}`);
+        validEntreeInput = true;
 
-    if (firstSide.toLowerCase() && menu.sidesMenu[firstSide.toLowerCase()]) {
-      const selectedFirstSide = menu.sidesMenu[firstSide.toLowerCase()];
-      alert(`You have selected ${firstSide.toLowerCase()} with price: $${selectedFirstSide.price}\n${selectedFirstSide.comment}\n${getRandomComment()}`);
+        let firstSide;
+        let selectedFirstSide;
+        let validFirstSideInput = false;
 
-      total += selectedFirstSide.price;
+        while (!validFirstSideInput) {
+          firstSide = prompt(`Please choose a side dish:\n${Object.keys(menu.sidesMenu.firstSideDish).map(key => `• ${key} - $${menu.sidesMenu.firstSideDish[key].price}`).join('\n')}`);
 
-      const secondSide = prompt(`Please choose a Second side dish:\n${Object.keys(menu.sidesMenu).map(key => `• ${key} - $${menu.sidesMenu[key].price}`).join('\n')}`);
+          if (firstSide.toLowerCase() && menu.sidesMenu.firstSideDish[firstSide.toLowerCase()]) {
+            selectedFirstSide = menu.sidesMenu.firstSideDish[firstSide.toLowerCase()];
+            alert(`You have selected ${firstSide.toLowerCase()} with price: $${selectedFirstSide.price}\n${selectedFirstSide.comment}\n${getRandomComment()}`);
 
-      if (secondSide.toLowerCase() && menu.sidesMenu[secondSide.toLowerCase()]) {
-        const selectedSecondSide = menu.sidesMenu[secondSide.toLowerCase()];
+            total += selectedFirstSide.price;
+            validFirstSideInput = true;
+          } else {
+            alert("Invalid selection of side dish. The specified name of the dish is not on the menu. Make sure you enter the name without spelling mistakes. Please try again.");
+          }
+        }
 
-        alert(`You have selected ${secondSide.toLowerCase()} with price: $${selectedSecondSide.price}\n${selectedSecondSide.comment}\n${getRandomComment()}`);
+        let secondSide;
+        let selectedSecondSide;
+        let validSecondSideInput = false;
 
-        total += selectedSecondSide.price;
-        alert(`Total price for your order: ${entree.toLowerCase()} ${chosenType.toLowerCase()}, ${firstSide.toLowerCase()}, ${secondSide.toLowerCase()} - $${total}`);
+        while (!validSecondSideInput) {
+          secondSide = prompt(`Please choose a drink:\n${Object.keys(menu.sidesMenu.secondSideDish).map(key => `• ${key} - $${menu.sidesMenu.secondSideDish[key].price}`).join('\n')}`);
+
+          if (secondSide.toLowerCase() && menu.sidesMenu.secondSideDish[secondSide.toLowerCase()]) {
+            selectedSecondSide = menu.sidesMenu.secondSideDish[secondSide.toLowerCase()];
+
+            alert(`You have selected ${secondSide.toLowerCase()} with price: $${selectedSecondSide.price}\n${selectedSecondSide.comment}\n${getRandomComment()}`);
+
+            total += selectedSecondSide.price;
+            validSecondSideInput = true;
+          } else {
+            alert("Invalid selection of drink. The specified name of the dish is not on the menu. Make sure you enter the name without spelling mistakes. Please try again.");
+          }
+        }
+
+        let dessert;
+        let validDessertInput = false;
+        let continueDessertSelection = false;
+
+        while (!validDessertInput && !continueDessertSelection) {
+         
+          const dessertQuestion = prompt(`Would you like to add any dessert to your order?\n\n• Type 'yes' if you want to see our dessert menu;\n• Type 'no' or skip this step if you do not want`);
+
+          if (dessertQuestion.toLowerCase() && dessertQuestion.toLowerCase() === 'yes') {
+            validDessertInput = true; 
+            dessert = prompt(`Please choose a dessert:\n${Object.keys(menu.dessertMenu).map(key => `• ${key} - $${menu.dessertMenu[key].price}`).join('\n')}\n\nIf you have not chosen any dessert, please skip this step.`);
+            continueDessertSelection = true;
+          } else if (dessertQuestion.toLowerCase() && dessertQuestion.toLowerCase() !== 'yes' && dessertQuestion.toLowerCase() !== 'no') {
+
+            alert('Invalid answer. Make sure you do not have spelling mistakes. Please try again.')
+          } else {
+            alert(`YOUR ORDER:\n • ${entree.toLowerCase()} - $${selectedEntree.price}\n • ${firstSide.toLowerCase()} - $${selectedFirstSide.price}\n • ${secondSide.toLowerCase()} - $${selectedSecondSide.price}\n\n\nTOTAL: $${total}`);
+            validDessertInput = true; 
+          } 
+        }
+
+        let validDessertName = false;
+        
+        while (continueDessertSelection && !validDessertName) {
+          if (dessert.toLowerCase() && menu.dessertMenu[dessert.toLowerCase()]) {
+  
+            const selectedDessert = menu.dessertMenu[dessert.toLowerCase()];
+          
+            alert(`You have selected ${dessert.toLowerCase()} with price: $${selectedDessert.price}\n${selectedDessert.comment}\n${getRandomComment()}`);
+          
+            total += selectedDessert.price
+            alert(`YOUR ORDER:\n • ${entree.toLowerCase()} - $${selectedEntree.price}\n • ${firstSide.toLowerCase()} - $${selectedFirstSide.price}\n • ${secondSide.toLowerCase()} - $${selectedSecondSide.price}\n • ${dessert.toLowerCase()} - $${selectedDessert.price}\n\n\nTOTAL: $${total}`);
+            validDessertName = true;
+          } else if (dessert.toLowerCase() && !menu.dessertMenu[dessert.toLowerCase()])  {
+            alert("Invalid selection of dessert. The specified name of dessert is not on the menu. Make sure you enter the name without spelling mistakes. Please try again.");
+            dessert = prompt(`Please choose a dessert:\n${Object.keys(menu.dessertMenu).map(key => `• ${key} - $${menu.dessertMenu[key].price}`).join('\n')}\n\nIf you have not chosen any dessert, please skip this step.`);
+          } else {
+            alert(`YOUR ORDER:\n • ${entree.toLowerCase()} - $${selectedEntree.price}\n • ${firstSide.toLowerCase()} - $${selectedFirstSide.price}\n • ${secondSide.toLowerCase()} - $${selectedSecondSide.price}\n\n\nTOTAL: $${total}`); 
+            validDessertName = true;
+          }
+        }
 
       } else {
-        alert("Invalid selection of second side dish. The specified name of the dish is not on the menu. Make sure you enter the name without spelling mistakes. Please try again.");
+        alert("Invalid selection of entree. The specified name of the dish is not on the menu. Make sure you enter the name without spelling mistakes. Please try again.");
       }
-    } else {
-      alert("Invalid selection of first side dish. The specified name of the dish is not on the menu. Make sure you enter the name without spelling mistakes. Please try again.");
-    }  
+    }
   } else {
-    alert("Invalid selection of entree. The specified name of the dish is not on the menu. Make sure you enter the name without spelling mistakes. Please try again.");
+    alert("Invalid category selected. Make sure you enter the name without spelling mistakes. Please try again.");
   }
-} else {
-  alert("Invalid category selected. Make sure you enter the name without spelling mistakes. Please try again.");
 }
+
+
+
